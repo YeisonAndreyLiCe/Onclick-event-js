@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick Event</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dojonary</h1>
+        <input type="text" placeholder="search">
+        <button id="log" onclick="log(this)">Login</button>
+    </header>
+
+    <div id="container">
+        <div class="left_panel">
+            <div class="first_definition">
+                <div class="left">
+                    <h2>ninja</h2>
+                    <p>noun</p>
+                    <p>plural:<i>ninjas</i></p>
+                    <input type="button" name="likes" id="likes_first_definition" value="13 likes" onclick="like()">
+                </div>
+                <div class="right">
+                    <p>A practitioner skilled in the <span>Japanese</span> art of <span>ninjutsu</span></p>
+                </div>
+            </div>
+            <div class="second_desinition">
+                <div class="left">
+                    <h2>ninja</h2>
+                    <p>noun</p>
+                    <p>plural:<i>ninjas</i></p>
+                    <input type="button" name="likes" id="likes_second_definition"value="37 likes">
+                </div>
+                <div class="right">
+                    <p>A <span>programmer</span> who breaks down problems with <span>zen</span>-like focus.</p>
+                </div>
+            </div>
+        </div>
+        <div class="right_panel">
+            <div class="adding_definition">
+                <p> Dijonary is defined by <strong>YOU</strong></p>
+                <button id="add_definition" onclick="remove(this)">Add Definition</button>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
